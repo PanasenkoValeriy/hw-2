@@ -38,7 +38,7 @@ const Profile = ({ username, tag, location, stats }) => {
         </li>
         <li className={styles.statsElement}>
           <span className={styles.label}>Likes</span>
-          <span className={styles.quantity}>{likes}</span>
+          <span className={styles.quantity}>{likes}</span>  
         </li>
       </ul>
     </div>
