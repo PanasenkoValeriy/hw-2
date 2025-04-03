@@ -1,16 +1,16 @@
+import { Button } from "./Button/Button";
+import { Greeting } from "./Greeting/Greeting";
+import { Message } from "./Message/Message";
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <>
+      <Greeting name="Валерій" />
+      <Message text="Laugh and the world laughs with you. Weep and you weep alone" />
+      <Button onClick={onHandleClick} />
+    </>
   );
+};
+function onHandleClick() {
+  console.log("На кнопку натиснули");
 };
